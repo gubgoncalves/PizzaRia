@@ -1,0 +1,22 @@
+.dashboard{
+
+display:flex;
+align-items:stretch;
+min-height:100vh;
+
+background:#fff3d6;
+
+font-family:Arial, sans-serif;
+
+}
+
+
+.dashboard-content{
+
+flex:1;
+
+padding:40px;
+
+min-height:100vh;
+
+}
