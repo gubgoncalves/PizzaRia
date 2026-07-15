@@ -1,0 +1,55 @@
+name: Sync Branches (backend ↔ frontend)
+
+on:
+  push:
+    branches: [backend, frontend]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório completo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sincronizar backend/ → frontend
+        if: github.ref_name == 'backend'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          echo "🔁 Mudança detectada na branch backend."
+          echo "Copiando pasta backend/ para a branch frontend..."
+          git checkout frontend
+          git checkout "${{ github.sha }}" -- backend/
+
+          if git diff --cached --quiet && git diff --quiet; then
+            echo "✅ Nada novo pra sincronizar."
+          else
+            git add backend/
+            git commit -m "auto-sync: backend/ recebe atualizações da branch backend [skip ci]"
+            git push
+            echo "🚀 frontend atualizada com os novos arquivos do backend!"
+          fi
+
+      - name: Sincronizar frontend/ → backend
+        if: github.ref_name == 'frontend'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          echo "🔁 Mudança detectada na branch frontend."
+          echo "Copiando pasta frontend/ para a branch backend..."
+          git checkout backend
+          git checkout "${{ github.sha }}" -- frontend/
+
+          if git diff --cached --quiet && git diff --quiet; then
+            echo "✅ Nada novo pra sincronizar."
+          else
+            git add frontend/
+            git commit -m "auto-sync: frontend/ recebe atualizações da branch frontend [skip ci]"
+            git push
+            echo "🚀 backend atualizada com os novos arquivos do frontend!"
+          fi
