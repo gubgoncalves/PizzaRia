@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "nome": "Calabresa",
+    "descricao": "Calabresa fatiada, mussarela, cebola e orégano",
+    "preco": 49.90,
+    "imagem": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 2,
+    "nome": "Portuguesa",
+    "descricao": "Presunto, ovos, cebola, pimentão e azeitona",
+    "preco": 52.90,
+    "imagem": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 3,
+    "nome": "Frango com Catupiry",
+    "descricao": "Frango desfiado, catupiry e mussarela",
+    "preco": 54.90,
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNeJlYyuIN9vdyk1VCjX8_5mfF6znr8qWBdZhWVeDAu-nS9aA2tvPOLrZ&s=10"
+  },
+  {
+    "id": 4,
+    "nome": "Quatro Queijos",
+    "descricao": "Mussarela, provolone, parmesão e gorgonzola",
+    "preco": 56.90,
+    "imagem": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 5,
+    "nome": "Margherita",
+    "descricao": "Mussarela, tomate, manjericão e parmesão",
+    "preco": 48.90,
+    "imagem": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 6,
+    "nome": "Pepperoni",
+    "descricao": "Pepperoni, mussarela e molho especial",
+    "preco": 55.90,
+    "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 7,
+    "nome": "Bacon",
+    "descricao": "Bacon crocante, mussarela, cebola e orégano",
+    "preco": 57.90,
+    "imagem": "https://images.unsplash.com/photo-1571066811602-716837d681de?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 8,
+    "nome": "Lombinho",
+    "descricao": "Lombo canadense, mussarela, cebola e azeitona",
+    "preco": 53.90,
+    "imagem": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 9,
+    "nome": "Atum",
+    "descricao": "Atum sólido, cebola, mussarela e orégano",
+    "preco": 55.90,
+    "imagem": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 10,
+    "nome": "Vegetariana",
+    "descricao": "Brócolis, palmito, milho, ervilha e mussarela",
+    "preco": 51.90,
+    "imagem": "https://images.unsplash.com/photo-1604917877934-07d8d248d396?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 11,
+    "nome": "Romeu e Julieta",
+    "descricao": "Mussarela de bufala com goiabada cremosa",
+    "preco": 53.90,
+    "imagem": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=400&h=300&fit=crop&q=80"
+  },
+  {
+    "id": 12,
+    "nome": "Chocolate",
+    "descricao": "Chocolate ao leite derretido com granulado e morango",
+    "preco": 49.90,
+    "imagem": "https://images.aws.nestle.recipes/original/2024_10_23T08_42_33_badun_images.badun.es_pizza_de_chocolate_con_fresones_y_platanos.jpg"
+  }
+]
