@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "usuario_id": 2,
+    "itens": [
+      {
+        "pizza": "Calabresa",
+        "tamanho": "Grande",
+        "adicionais": [
+          "Catupiry",
+          "Bacon",
+          "Cheddar",
+          "Extra queijo"
+        ],
+        "valor": 89.9
+      }
+    ],
+    "total": 89.9,
+    "endereco": "Rua não informada,",
+    "forma_pagamento": "Pix",
+    "status": "Entregue",
+    "status_atualizado_em": "2026-07-10T13:20:44.626777",
+    "data": "10/07/2026 12:19"
+  }
+]
