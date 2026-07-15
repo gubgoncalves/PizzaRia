@@ -7,10 +7,11 @@ Sistema web de pizzaria desenvolvido com React e Flask.
 ## 📌 Sobre o projeto
 
 A PizzaRia é uma aplicação fullstack focada em pedidos online de pizzas, desenvolvida
-originalmente como projeto da disciplina de Programação Web (XDES03) na UNIFEI.
+originalmente como projeto em equipe (3 integrantes) da disciplina de Programação Web
+(XDES03) na UNIFEI.
 
 Este repositório é a minha versão pessoal do projeto, reorganizada para portfólio,
-reunindo o trabalho que desenvolvi no time: estilos, layouts estruturais,
+reunindo o trabalho que desenvolvi no time: estilos CSS, layouts estruturais,
 infraestrutura do projeto e documentação.
 
 O projeto utiliza:
@@ -146,12 +147,9 @@ O servidor de desenvolvimento roda em `http://127.0.0.1:5173`
 ---
 
 ## 🔗 Fluxo de comunicação
-
-```
 [Browser] → React (Vite, :5173) → fetch() → Flask (:5000) → JSON files
-                                         ↕
-                                   BrasilAPI (CEP público)
-```
+↕
+BrasilAPI (CEP público)
 
 1. O React (Vite) serve as páginas em `localhost:5173`
 2. As páginas chamam funções em `src/services/api.js`
@@ -163,10 +161,12 @@ O servidor de desenvolvimento roda em `http://127.0.0.1:5173`
 
 ## 👤 Autor
 
-**Gustavo Gonçalves**
-Estudante de Sistemas de Informação (UNIFEI) — Trainee em Ciência de Dados na Asimov Jr.
+**Gustavo Barbosa Gonçalves**
+Graduando em Sistemas de Informação (UNIFEI) — Analista de Dados & Assessor de Vendas na Asimov Jr.
 
 - GitHub: [@gubgoncalves](https://github.com/gubgoncalves)
+- LinkedIn: [gugoncalves25](https://linkedin.com/in/gugoncalves25)
+- Portfólio: [gubgoncalves.github.io/CV_PORTFOLIO](https://gubgoncalves.github.io/CV_PORTFOLIO/)
 
 ---
 
