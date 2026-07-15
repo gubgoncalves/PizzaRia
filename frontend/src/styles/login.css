@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-dark: #2c0f08;
+  --card-creme: #fdf6ec; /* Creme claro bem próximo ao do design */
+  --input-bg: #f4e8d8;
+  --input-border: #dcbfa6;
+  --red-accent: #cc251c; /* Vermelho exato do botão e textos */
+  --red-accent-dark: #b51f18;
+  --text-dark: #2a1209; /* Marrom super escuro */
+  --text-light: #fff5e6;
+  --muted-light: #ebdacf;
+  --line-dark: #6a1b15; /* Linha de divisão escura */
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* ========== LADO ESQUERDO ========== */
+.branding-section {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 40px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.branding-content {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-pizza {
+  width: 100%;
+  max-width: 440px;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.5));
+  margin-bottom: -15px; /* Puxa o texto para mais perto da pizza */
+}
+
+/* Texto Renderizado */
+.hero-text {
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.1;
+  /* 2. Adicione este margin-top para empurrar o bloco de texto para baixo */
+  margin-top: 10px; 
+  margin-bottom: 20px;
+}
+
+
+.text-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  color: var(--text-light);
+  letter-spacing: 0.5px;
+}
+
+.text-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.white-text {
+  font-size: clamp(2.6rem, 4.2vw, 4.2rem);
+  color: var(--text-light);
+  font-weight: 900;
+}
+
+.red-text {
+  font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+  color: var(--red-accent);
+  font-weight: 900;
+}
+
+.hero-description {
+  max-width: 560px;
+  text-align: center;
+  color: var(--muted-light);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 0 35px 0;
+}
+
+/* Ícones de benefícios */
+.features {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.feature-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.feature-icon-wrapper {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1.5px solid var(--red-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: var(--red-accent);
+}
+
+.feature-divider {
+  width: 1px;
+  min-width: 1px;
+  background-color: var(--line-dark);
+  margin: 10px 10px;
+}
+
+/* ========== LADO DIREITO (CARD DE LOGIN) ========== */
+.login-section {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 50px 70px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 540px;
+  background: var(--card-creme);
+  border-radius: 24px;
+  padding: 50px 50px 40px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.2vw, 2.2rem);
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.red-line {
+  width: 50px;
+  height: 4px;
+  background-color: var(--red-accent);
+  border-radius: 4px;
+  margin: 12px auto 20px;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #553b31;
+  font-weight: 500;
+}
+
+/* Checkbox Customizado */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember-me input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--red-accent);
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.remember-me input[type="checkbox"]:checked {
+  background-color: var(--red-accent);
+}
+
+.remember-me input[type="checkbox"]:checked::after {
+  content: '✔';
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remember-me label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.forgot-password {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--red-accent);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Botões */
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--red-accent);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  height: 52px;
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--red-accent-dark);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.separator-line {
+  flex: 1;
+  height: 1px;
+  background-color: #d8c9b9;
+}
+
+.separator span {
+  color: #8c7362;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--text-dark);
+  border: 1.5px solid var(--text-dark);
+  border-radius: 12px;
+  height: 52px;
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f0e6d9;
+}
+
+/* Redes Sociais */
+.social-links-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-links-container p {
+  margin: 0 0 16px 0;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.25rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+/* Rodapé */
+.page-footer {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: rgba(255, 245, 235, 0.88);
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 1280px) {
+  .branding-logo {
+    width: 130px;
+    top: 28px;
+    left: 28px;
+  }
+  .branding-section {
+    padding: 100px 24px 110px 28px;
+  }
+  .login-section {
+    padding: 28px 32px 60px 18px;
+  }
+  .login-card {
+    max-width: 480px;
+    padding: 40px 36px 34px;
+  }
+  .hero-pizza {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .page-wrapper {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .branding-section, .login-section {
+    width: 100%;
+    min-height: auto;
+  }
+  .branding-section {
+    padding: 2px 24px 40px;
+  }
+  .login-section {
+    padding: 0 24px 90px;
+  }
+  .hero-pizza {
+    max-width: 350px;
+  }
+  .login-card {
+    max-width: 600px;
+  }
+  .page-footer {
+    position: static;
+    transform: none;
+    padding-bottom: 24px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branding-section {
+    padding: 2px 18px 34px;
+  }
+  .login-section {
+    padding: 0 18px 60px;
+  }
+  .login-card {
+    padding: 34px 22px 26px;
+    border-radius: 24px;
+  }
+
+  .hero-pizza {
+    width: 100%;
+    max-width: 440px;
+    object-fit: contain;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+    filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.5));
+    /* 1. Mude o margin-bottom para um valor positivo. 
+       (Se antes estava negativo, é isso que está "puxando" o texto para cima da pizza) */
+    margin-bottom: 20px; 
+  }
+  .text-top {
+    font-size: 2rem;
+  }
+  .white-text, .red-text {
+    font-size: 2.2rem;
+  }
+  .features {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .feature-divider {
+    display: none;
+  }
+}
