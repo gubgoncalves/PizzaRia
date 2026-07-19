@@ -166,7 +166,7 @@ Graduando em Sistemas de Informação (UNIFEI) — Analista de Dados & Assessor 
 
 - GitHub: [@gubgoncalves](https://github.com/gubgoncalves)
 - LinkedIn: [gugoncalves25](https://linkedin.com/in/gugoncalves25)
-- Portfólio: [gubgoncalves.github.io/CV_PORTFOLIO](https://gubgoncalves.github.io/CV_PORTFOLIO/)
+- Portfólio: [gubgoncalves.github.io/Portfolio](https://gubgoncalves.github.io/Portfolio/)
 
 ---
 
